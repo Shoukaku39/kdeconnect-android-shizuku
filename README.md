@@ -1,37 +1,45 @@
-# KDE Connect - Android app
+# KDE Connect Android (Shizuku-supported fork)
 
-KDE Connect is a multi-platform app that allows your devices to communicate (eg: your phone and your computer).
+This is a personal fork of the [KDE Connect Android](https://github.com/KDE/kdeconnect-android) project, focused on **bypassing Android 10+ clipboard access restrictions** using the [Shizuku](https://shizuku.rikka.app/) service.
 
-## (Some) Features
-- **Shared clipboard**: copy and paste between your phone and your computer (or any other device).
-- **Notification sync**: Read and reply to your Android notifications from the desktop.
-- **Share files and URLs** instantly from one device to another.
-- **Multimedia remote control**: Use your phone as a remote for Linux media players.
-- **Virtual touchpad**: Use your phone screen as your computer's touchpad and keyboard.
+本项目是 [KDE Connect Android](https://github.com/KDE/kdeconnect-android) 的一个个人分支，目的是通过 [Shizuku](https://shizuku.rikka.app/) 服务**绕过 Android 10+ 的剪贴板访问限制**。
 
-All this without wires, over the already existing Wi-Fi network, and using TLS encryption.
+---
 
-## About this app
+## ✨ Key Features | 主要特性
 
-This is a native Android port of the KDE Connect Qt app. You will find a more complete readme about KDE Connect [here](https://invent.kde.org/network/kdeconnect-kde/).
+- 🔓 **Clipboard access without `READ_LOGS`**  
+  利用 Shizuku 获取剪贴板权限，无需申请 `READ_LOGS`（该权限无法在普通应用中使用）。
+  
+- ⚙️ **No need for manual ADB commands**  
+  无需用户手动执行 ADB 授权命令，Shizuku 服务可通过图形界面一次性授权。
+---
 
-## How to install this app
 
-You can install this app from the [Play Store](https://play.google.com/store/apps/details?id=org.kde.kdeconnect_tp) as well as [F-Droid](https://f-droid.org/repository/browse/?fdid=org.kde.kdeconnect_tp). Note you will also need to install the [desktop app](https://invent.kde.org/network/kdeconnect-kde) for it to work.
+## 🔐 Permissions 权限说明
 
-## Contributing
+This build does **not request `READ_LOGS`** or use direct ADB shell.  
+Clipboard access is handled via **Shizuku service**, which can be launched using **wireless debugging** or **root**.
 
-A lot of useful information, including how to get started working on KDE Connect and how to connect with the current developers, is on our [KDE Community Wiki page](https://community.kde.org/KDEConnect)
+本版本不会请求 `READ_LOGS` 权限，也不使用传统 ADB 命令手动授权。  
+剪贴板访问通过 **Shizuku 服务**实现，Shizuku 可使用**无线调试或 root 权限启动**。
 
-For bug reporting, please use [KDE's Bugzilla](https://bugs.kde.org). Please do not use the issue tracker in GitLab since we want to keep everything in one place.
+---
 
-To contribute patches, use [KDE Connect's Gitlab](https://invent.kde.org/network/kdeconnect-android/).
-On Gitlab (as well as on our [old Phabricator](https://phabricator.kde.org/tag/kde_connect/)) you can find a task list with stuff to do and links to other relevant resources.
-It is a good idea to also subscribe to the [KDE Connect mailing list](https://mail.kde.org/mailman/listinfo/kdeconnect).
+## 🚫 Disclaimer | 注意事项
 
-Please know that all translations for all KDE apps are handled by the [localization team](https://l10n.kde.org/). If you would like to submit a translation, that should be done by working with the proper team for that language.
+- This is an unofficial personal fork and **will not be merged upstream**.
+- Intended for personal experimentation or niche use cases only.
+- Requires Android 10 or newer.
+- The minimum SDK level has been increased and may not be suitable for general use.
 
-## License
-[GNU GPL v2](https://www.gnu.org/licenses/gpl-2.0.html) and [GNU GPL v3](https://www.gnu.org/licenses/gpl-3.0.html)
+本项目是一个**非官方的个人修改版本**，不会被合并到 KDE Connect 主线中。  
+仅适用于个人实验或特殊需求场景，**最低支持 Android 10**，不建议作为主力版本使用。
 
-If you are reading this from GitHub, you should know that this is just a mirror of the [KDE Project repo](https://invent.kde.org/network/kdeconnect-android/).
+---
+
+## 📫 Contact
+
+You’re welcome to fork or report issues, though this repo may not be actively maintained long-term.
+
+欢迎感兴趣的开发者 Fork 使用或提交 issue。该仓库为个人试验项目，可能不会长期维护。
