@@ -2,7 +2,7 @@
 <resources>
   <string name="kde_connect">KDE Connect</string>
   <string name="manifest_label_share">发送到设备</string>
-  <string name="foreground_notification_no_devices">未连接到任何设备</string>
+  <string name="foreground_notification_no_devices">人家正在后台待命的说~</string>
   <string name="foreground_notification_devices">已连接到：%s</string>
   <string name="foreground_notification_send_clipboard">发送剪贴板</string>
   <string name="pref_plugin_telephony">来电通知</string>

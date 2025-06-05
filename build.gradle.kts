@@ -38,10 +38,10 @@ android {
     compileSdk = 35
     defaultConfig {
         applicationId = "org.kde.kdeconnect_tp"
-        minSdk = 21
+        minSdk = 24
         targetSdk = 35
-        versionCode = 13304
-        versionName = "1.33.4"
+        versionCode = 23304
+        versionName = "2.33.4"
         proguardFiles(getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro")
     }
     buildFeatures {
@@ -332,6 +332,11 @@ dependencies {
     // For device controls
     implementation(libs.reactive.streams)
     implementation(libs.rxjava)
+
+    //导入 shizuku
+    implementation("dev.rikka.shizuku:api:12.0.0")
+    implementation("dev.rikka.shizuku:provider:12.0.0")
+
 }
 
 licenseReport {

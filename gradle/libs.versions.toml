@@ -37,6 +37,7 @@ sshdCore = "2.15.0"
 swiperefreshlayout = "1.1.0"
 uiToolingPreview = "1.8.0"
 univocityParsers = "2.9.1"
+shizuku = "12.0.1"
 
 [libraries]
 android-desugarJdkLibsNio = { module = "com.android.tools:desugar_jdk_libs_nio", version.ref = "androidDesugarJdkLibs" }
@@ -83,7 +84,8 @@ reactive-streams = { module = "org.reactivestreams:reactive-streams", version.re
 rxjava = { module = "io.reactivex.rxjava2:rxjava", version.ref = "rxjava" }
 univocity-parsers = { module = "com.univocity:univocity-parsers", version.ref = "univocityParsers" }
 slf4j-handroid = { group = "com.gitlab.mvysny.slf4j", name = "slf4j-handroid", version.ref = "sl4j" }
-
+shizuku-api = { group = "dev.rikka.shizuku", name = "api", version.ref = "shizuku" }
+shizuku-provider = { group = "dev.rikka.shizuku", name = "provider", version.ref = "shizuku" }
 [plugins]
 android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
