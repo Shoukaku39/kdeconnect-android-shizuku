@@ -15,6 +15,22 @@ This is a personal fork of the [KDE Connect Android](https://github.com/KDE/kdec
   无需用户手动执行 ADB 授权命令，Shizuku 服务可通过图形界面一次性授权。
 ---
 
+## 📦 Usage | 使用说明
+
+1. **Install [Shizuku](https://play.google.com/store/apps/details?id=moe.shizuku.privileged.api) and this app on your device.**  
+   **在设备上安装 [Shizuku](https://play.google.com/store/apps/details?id=moe.shizuku.privileged.api) 和本应用**
+
+2. **Start Shizuku service by following the in-app guide (via wireless debugging or root).**  
+   **根据 Shizuku 内的引导启动服务（无线调试或 root 启动）**
+
+3. **Go to Shizuku's "Apps" tab and allow this app to use Shizuku.**  
+   **进入 Shizuku 的“已授权应用”页面，允许 KDE Connect 使用 Shizuku 权限**
+
+4. **Launch KDE Connect and grant "display over other apps" permission in system settings.**  
+**打开 KDE Connect 应用，并在系统设置中授予“在其他应用上层显示”权限**
+
+
+---
 
 ## 🔐 Permissions 权限说明
 
@@ -35,6 +51,16 @@ Clipboard access is handled via **Shizuku service**, which can be launched using
 
 本项目是一个**非官方的个人修改版本**，不会被合并到 KDE Connect 主线中。  
 仅适用于个人实验或特殊需求场景，**最低支持 Android 10**，不建议作为主力版本使用。
+
+---
+
+## ❤️ Acknowledgements 致谢
+
+* [KDE Connect](https://kdeconnect.kde.org/)
+* [Shizuku](https://github.com/RikkaApps/Shizuku)
+* Friends who helped with testing during development  
+  感谢在开发测试阶段提供实际使用反馈的朋友们  
+  [@mangranbuzhi](https://github.com/mangranbuzhi)
 
 ---
 
